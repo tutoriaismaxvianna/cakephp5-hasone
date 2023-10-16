@@ -68,8 +68,8 @@ class TelephonesTable extends Table
         $validator
             ->scalar('phone_number')
             ->maxLength('phone_number', 20)
-            ->requirePresence('phone_number', 'create')
-            ->notEmptyString('phone_number');
+            // ->requirePresence('phone_number', 'create')
+            ->allowEmptyString('phone_number');
 
         return $validator;
     }

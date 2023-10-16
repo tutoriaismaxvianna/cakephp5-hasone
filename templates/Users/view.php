@@ -24,7 +24,7 @@
                 </tr>
                 <tr>
                     <th><?= __('Phone Number') ?></th>
-                    <td><?= h($user->telephone->phone_number) ?></td>
+                    <td><?= h($user->telephone->phone_number??'') ?></td>
                 </tr>
                 <tr>
                     <th><?= __('Id') ?></th>
